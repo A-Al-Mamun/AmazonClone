@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+/* Header Section Start */
+header{
+    background: #00453e;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+}
+/* Header Left */
+/* Header Logo */
+.header-left{
+    flex: 0 0 10%;
+    display: flex;
+}
+.header-logo{
+    flex: 0 0 45%;
+    margin-right: 5px;
+    transition: 0.3s;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-logo:hover{
+    border: 1px solid #fff;
+}
+.header-logo a{
+    text-decoration: none;
+}
+.header-logo a img{
+    max-width: 100px;
+}
+
+/* Header Location */
+.header-location{
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 0 5px;
+    transition: 0.4s;
+}
+.header-location:hover{
+    border: 1px solid #fff;
+}
+.loc-icon{}
+.loc-icon i{
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 8px;
+}
+
+.loc-content{
+    padding: 5px;
+}
+.loc-content p{
+    font-size: 1.3rem;
+    color: #ffffff99;
+    font-weight: 500;
+}
+.loc-content h3{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+
+/* Header Middle Section */
+.header-middle{
+    flex: 0 0 64.5%;
+    margin: 0 22px;
+    display: flex;
+    align-items: center;
+}
+.middle-left{
+    flex: 0 0 4%;
+    padding: 15px 8px;
+    background: #e6e6e6;
+    border-radius: 5px 0 0 5px;
+}
+.all-menu{
+    width: 100%;
+    display: inline-block;
+    color: #55555e;
+    text-decoration: none; 
+    font-size: 1.3rem;
+}
+.all-menu i{
+    margin-left: 7px;
+    font-size: 1.1rem;
+    transform: rotate(90deg);
+}
+.middle-mid{
+    flex: 0 0 92%;
+}
+.middle-mid input{
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 14px 10px;
+    border: none;
+    outline: none;
+}
+
+.middle-right{
+    flex: 0 0 4%;
+}
+#search{
+    padding: 14px 0;
+    color: #55555e;
+    background: #ffdfd7;
+    text-decoration: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+}
+#search i{
+    font-size: 1.8rem;
+}
+
+/* Header-right */
+
+.header-right{
+    flex: 0 0 15%;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+/* Language Section */
+.header-lang{
+    flex: 0 0 20%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.header-lang:hover{
+    border: 1px solid #fff;
+}
+.header-lang img{
+    width: 20px;
+    border-radius: 3px;
+}
+.lang-list{
+    display: flex;
+    padding: 0 5px;
+}
+.lang-list span{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0px;
+}
+.lang-list i{
+    color: #ffffff90;
+    font-size: 1.2rem;
+    transform: rotate(90deg);
+}
+
+/* Account */
+.header-account{
+    flex: 0 0 50%;
+    padding: 8px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+.header-account:hover{
+    border: 1px solid #fff;
+}
+
+.acc-content{}
+.acc-content p{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+}
+.acc-content h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.header-account i{
+    color: #ffffff80;
+    font-size: 1.3rem;
+    transform: rotate(90deg);
+    margin: 15px 0 0 5px;
+}
+
+/* Order */
+.header-order{
+    flex: 0 0 30%;
+    padding: 8px 5px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    transition: 0.4s;
+}
+.header-order:hover{
+    border: 1px solid #fff;
+}
+
+.order-content{}
+.order-content p{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+}
+.order-content h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* Cart */
+.header-cart{
+    flex: 0 0 10%;
+    padding: 10px 5px;
+    display: flex;
+}
+.header-cart:hover{
+    border: 1px solid #fff;
+}
+.header-cart i{
+    color: #fff;
+    font-size: 2.8rem;
+}
+.header-cart p{
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+/* Header Section End */
