@@ -16,17 +16,18 @@ img{
 header{
     background: #00453e;
     padding: 10px 18px;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 /* Header Left */
 /* Header Logo */
 .header-left{
-    flex: 0 0 10%;
+    flex-basis: 10%;
     display: flex;
 }
 .header-logo{
-    flex: 0 0 45%;
+    flex-basis: 45%;
     margin-right: 5px;
     transition: 0.3s;
     padding: 3px;
@@ -46,7 +47,7 @@ header{
 
 /* Header Location */
 .header-location{
-    flex: 0 0 45%;
+    flex-basis: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,19 +81,19 @@ header{
 
 /* Header Middle Section */
 .header-middle{
-    flex: 0 0 64.5%;
+    flex-basis: 75%;
     margin: 0 22px;
     display: flex;
     align-items: center;
 }
 .middle-left{
-    flex: 0 0 4%;
+    flex-basis: 4%;
     padding: 15px 8px;
     background: #e6e6e6;
     border-radius: 5px 0 0 5px;
 }
 .all-menu{
-    width: 100%;
+    width: 40px;
     display: inline-block;
     color: #55555e;
     text-decoration: none; 
@@ -104,7 +105,7 @@ header{
     transform: rotate(90deg);
 }
 .middle-mid{
-    flex: 0 0 92%;
+    flex-basis: 92%;
 }
 .middle-mid input{
     width: 100%;
@@ -116,9 +117,10 @@ header{
 }
 
 .middle-right{
-    flex: 0 0 4%;
+    flex-basis: 4%;
 }
 #search{
+    width: 40px;
     padding: 14px 0;
     color: #55555e;
     background: #ffdfd7;
@@ -135,15 +137,16 @@ header{
 /* Header-right */
 
 .header-right{
-    flex: 0 0 15%;
+    flex-basis: 25%;
     display: flex;
     align-items: center;
     margin: 0px;
 }
 /* Language Section */
 .header-lang{
-    flex: 0 0 20%;
+    flex-basis: 15%;
     padding: 15px 20px;
+    margin: 0 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,8 +177,9 @@ header{
 
 /* Account */
 .header-account{
-    flex: 0 0 50%;
+    flex-basis: 30%;
     padding: 8px 5px;
+    margin: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,11 +192,13 @@ header{
 .acc-content{}
 .acc-content p{
     font-size: 1.3rem;
+    width: 100px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
 }
 .acc-content h3{
     color: #fff;
+    width: 100px;
     font-weight: 700;
     font-size: 1.3rem;
 }
@@ -206,8 +212,9 @@ header{
 
 /* Order */
 .header-order{
-    flex: 0 0 30%;
+    flex-basis: 15%;
     padding: 8px 5px;
+    margin: 0 5px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -220,6 +227,7 @@ header{
 .order-content{}
 .order-content p{
     font-size: 1.3rem;
+    width: 60px;
     color: #fff;
     font-weight: 500;
 }
@@ -231,8 +239,9 @@ header{
 
 /* Cart */
 .header-cart{
-    flex: 0 0 10%;
+    flex-basis: 15%;
     padding: 10px 5px;
+    margin: 0 5px;
     display: flex;
 }
 .header-cart:hover{
