@@ -368,13 +368,17 @@ header{
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .slide-left,
 .slide-right{
-    color: #fff;
-    font-size: 2rem;
+    color: #ffffff80;
+    font-size: 4rem;
     cursor: pointer;
+    margin: 50px 30px;
 }
 
 /* Shop Now Item */
@@ -412,3 +416,42 @@ header{
     color: red;
 }
 /* Slider Section End */
+
+/* Popular Product */
+.popular{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+.popular h2{
+    font-size: 2rem;
+}
+.popular-slider{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.pop-item{
+
+    flex: 0 0 100%;
+    height: 200px;
+}
+.pop-item.active{
+    transform: translateX(0);
+}
+
+.pop-order{
+    position: absolute;
+    left: 0;
+    top: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop-left,
+.pop-right{
+    font-size: 4rem;
+    color: #ddd;
+}
