@@ -309,7 +309,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 900px;
+    height: 1000px;
     flex: 0 0 100%;
     animation: slides 100s 50s infinite;
 }
@@ -420,13 +420,14 @@ header{
 /* Popular Product */
 .popular{
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 50px 0;
     overflow: hidden;
     position: relative;
 }
 .popular h2{
     font-size: 2rem;
+    margin-bottom: 5px;
 }
 .popular-slider{
     display: flex;
@@ -444,7 +445,7 @@ header{
 .pop-order{
     position: absolute;
     left: 0;
-    top: 130px;
+    top: 150px;
     width: 100%;
     display: flex;
     justify-content: space-between;

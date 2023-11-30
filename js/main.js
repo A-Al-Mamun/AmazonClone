@@ -56,3 +56,33 @@ rightPop.addEventListener('click', () => {
 
     popSlider.style.transform = `translateX(-${slideIndex * 100}%)`; 
 })
+
+
+// Another
+let popSlider1 = document.getElementsByClassName('popular-slider')[1];
+let popItems1 = document.querySelectorAll('.pop-item');
+
+let leftPop1 = document.getElementsByClassName('pop-left')[1];
+let rightPop1 = document.getElementsByClassName('pop-right')[1];
+
+// let slideIndex = 0;
+popItems1[slideIndex].classList.add('active');
+// console.log(sliderItems);
+
+leftPop1.addEventListener('click', () => {
+    popItems1[slideIndex].classList.remove('active');
+
+    slideIndex = (slideIndex == 0) ? popItems1.length - 1 : slideIndex - 1;
+    popItems1[slideIndex].classList.add('active');
+
+    popSlider1.style.transform = `translateX(-${slideIndex * 100}%)`; 
+})
+
+rightPop1.addEventListener('click', () => {
+    popItems1[slideIndex].classList.remove('active');
+
+    slideIndex = (slideIndex == popItems1.length - 1) ? 0 : slideIndex + 1;
+    popItems1[slideIndex].classList.add('active');
+
+    popSlider1.style.transform = `translateX(-${slideIndex * 100}%)`; 
+})
