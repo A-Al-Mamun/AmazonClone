@@ -421,13 +421,14 @@ header{
 .popular{
     max-width: 1500px;
     margin: 0px auto;
+    padding: 20px;
     background: #fff;
     overflow: hidden;
     position: relative;
 }
 .popular h2{
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .popular-slider{
     display: flex;
@@ -468,13 +469,14 @@ header{
 .top{
     max-width: 1500px;
     margin: 22px auto;
+    padding: 20px;
     background: #fff;
     overflow: hidden;
     position: relative;
 }
 .top h2{
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .top-slider{
     display: flex;
@@ -495,7 +497,7 @@ header{
 .top-order{
     position: absolute;
     left: 0;
-    top: 150px;
+    top: 130px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -509,9 +511,9 @@ header{
 
 
 /* Shop Now Section */
-.shop-Now{
+.shop-sec{
     width: 1500px;
-    margin: 0px auto;
+    margin: 0px auto 22px;
 }
 .shop-Now{
     width: 100%;
