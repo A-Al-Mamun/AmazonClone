@@ -35,54 +35,54 @@ let popItems = document.querySelectorAll('.pop-item');
 let leftPop = document.getElementsByClassName('pop-left')[0];
 let rightPop = document.getElementsByClassName('pop-right')[0];
 
-// let slideIndex = 0;
-popItems[slideIndex].classList.add('active');
+let popIndex = 0;
+popItems[popIndex].classList.add('active');
 // console.log(sliderItems);
 
 leftPop.addEventListener('click', () => {
-    popItems[slideIndex].classList.remove('active');
+    popItems[popIndex].classList.remove('active');
 
-    slideIndex = (slideIndex == 0) ? popItems.length - 1 : slideIndex - 1;
-    popItems[slideIndex].classList.add('active');
+    popIndex = (popIndex == 0) ? popItems.length - 1 : popIndex - 1;
+    popItems[popIndex].classList.add('active');
 
-    popSlider.style.transform = `translateX(-${slideIndex * 100}%)`; 
+    popSlider.style.transform = `translateX(-${popIndex * 16}%)`; 
 })
 
 rightPop.addEventListener('click', () => {
-    popItems[slideIndex].classList.remove('active');
+    popItems[popIndex].classList.remove('active');
 
-    slideIndex = (slideIndex == popItems.length - 1) ? 0 : slideIndex + 1;
-    popItems[slideIndex].classList.add('active');
+    popIndex = (popIndex == popItems.length - 1) ? 0 : popIndex + 1;
+    popItems[popIndex].classList.add('active');
 
-    popSlider.style.transform = `translateX(-${slideIndex * 100}%)`; 
+    popSlider.style.transform = `translateX(-${popIndex * 16}%)`; 
 })
 
 
 // Another
-let popSlider1 = document.getElementsByClassName('popular-slider')[1];
-let popItems1 = document.querySelectorAll('.pop-item');
+let topSlider = document.getElementsByClassName('top-slider')[0];
+let topItems = document.querySelectorAll('.top-item');
 
-let leftPop1 = document.getElementsByClassName('pop-left')[1];
-let rightPop1 = document.getElementsByClassName('pop-right')[1];
+let leftTop = document.getElementsByClassName('top-left')[0];
+let rightTop = document.getElementsByClassName('top-right')[0];
 
-// let slideIndex = 0;
-popItems1[slideIndex].classList.add('active');
+let topIndex = 0;
+topItems[topIndex].classList.add('active');
 // console.log(sliderItems);
 
-leftPop1.addEventListener('click', () => {
-    popItems1[slideIndex].classList.remove('active');
+leftTop.addEventListener('click', () => {
+    topItems[topIndex].classList.remove('active');
 
-    slideIndex = (slideIndex == 0) ? popItems1.length - 1 : slideIndex - 1;
-    popItems1[slideIndex].classList.add('active');
+    topIndex = (topIndex == 0) ? topItems.length - 1 : topIndex - 1;
+    topItems[topIndex].classList.add('active');
 
-    popSlider1.style.transform = `translateX(-${slideIndex * 100}%)`; 
+    topSlider.style.transform = `translateX(-${topIndex * 6}%)`; 
 })
 
-rightPop1.addEventListener('click', () => {
-    popItems1[slideIndex].classList.remove('active');
+rightTop.addEventListener('click', () => {
+    topItems[topIndex].classList.remove('active');
 
-    slideIndex = (slideIndex == popItems1.length - 1) ? 0 : slideIndex + 1;
-    popItems1[slideIndex].classList.add('active');
+    topIndex = (topIndex == topItems.length - 1) ? 0 : topIndex + 1;
+    topItems[topIndex].classList.add('active');
 
-    popSlider1.style.transform = `translateX(-${slideIndex * 100}%)`; 
+    topSlider.style.transform = `translateX(-${topIndex * 6}%)`; 
 })

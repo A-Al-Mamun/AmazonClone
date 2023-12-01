@@ -395,7 +395,7 @@ header{
     flex: 0 0 23%;
     padding: 15px;
     background-color: #fff;
-    margin: 10px;
+    margin: 12px;
 }
 .shop-item h2{
     font-size: 2rem;
@@ -420,8 +420,8 @@ header{
 /* Popular Product */
 .popular{
     max-width: 1500px;
-    margin: 5px auto;
-    padding: 50px 0;
+    margin: 0px auto;
+    background: #fff;
     overflow: hidden;
     position: relative;
 }
@@ -431,15 +431,22 @@ header{
 }
 .popular-slider{
     display: flex;
+    align-items: center;
     transition: transform 0.5s ease-in-out;
 }
 .pop-item{
-
-    flex: 0 0 100%;
-    height: 200px;
+    flex: 0 0 20%;
+    height: 230px;
+    display: flex;
+    align-items: center;
 }
 .pop-item.active{
     transform: translateX(0);
+}
+
+.pop-item img{
+    width: 200px;
+    height: 100%;
 }
 
 .pop-order{
@@ -455,4 +462,91 @@ header{
 .pop-right{
     font-size: 4rem;
     color: #ddd;
+}
+
+/* Top Product */
+.top{
+    max-width: 1500px;
+    margin: 22px auto;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.top h2{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.top-slider{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.top-item{
+    flex: 0 0 13%;
+    height: 200px;
+}
+.top-item.active{
+    transform: translateX(0);
+}
+.top-item img{
+    width: 200px;
+    height: 100%;
+}
+
+.top-order{
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-left,
+.top-right{
+    font-size: 4rem;
+    color: #ddd;
+}
+
+
+/* Shop Now Section */
+.shop-Now{
+    width: 1500px;
+    margin: 0px auto;
+}
+.shop-Now{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shop-Item{
+    flex: 0 0 23.5%;
+    padding: 15px;
+    background-color: #fff;
+    margin: 0px;
+}
+/* .shop-Item:first-child{
+    margin-right: 12px;
+}
+.shop-Item:last-child{
+    margin-left: 12px;
+} */
+
+.shop-Item h2{
+    font-size: 2rem;
+}
+.shop-Item img{
+    width: 100%;
+    height: 250px;
+    background: #000;
+}
+.shop-Item a{
+    display: inline-block;
+    color: #195851;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.shop-Item a:hover{
+    color: red;
 }
