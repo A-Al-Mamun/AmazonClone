@@ -294,6 +294,7 @@ header{
 /* Slider Section Start */
 .container{
     max-width: 1500px;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -512,14 +513,14 @@ header{
 
 /* Shop Now Section */
 .shop-sec{
-    width: 1500px;
+    width: 100%;
     margin: 0px auto 22px;
 }
 .shop-Now{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap!important;
 }
 .shop-Item{
     flex: 0 0 23.5%;
@@ -552,3 +553,41 @@ header{
 .shop-Item a:hover{
     color: red;
 }
+
+
+
+/* Popular Slide */
+
+.pop1-item{
+    flex: 0 0 20%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+}
+.pop1-item.active{
+    transform: translateX(0);
+}
+
+
+/* Footer-up Section */
+
+.footer-up{
+    max-width: 100%;
+    padding: 50px 0 20px;
+    margin-top: 22px;
+    background: #fff;
+}
+.footer-up-inner{
+    max-width: 100%;
+    padding: 50px 0 20px;
+    border-top: 1px solid #00000040;
+    border-bottom: 1px solid #00000040;
+    text-align: center;
+}
+.footer-up-inner p{
+    font-size: 1.4rem;
+}
+.footer-up-inner a{
+    font-size: 1.4rem;
+}
+.footer-up-inner p a{}

@@ -29,6 +29,9 @@ rightSlide.addEventListener('click', () => {
 })
 
 
+
+// Popular products Slide
+
 let popSlider = document.getElementsByClassName('popular-slider')[0];
 let popItems = document.querySelectorAll('.pop-item');
 
@@ -85,4 +88,33 @@ rightTop.addEventListener('click', () => {
     topItems[topIndex].classList.add('active');
 
     topSlider.style.transform = `translateX(-${topIndex * 6}%)`; 
+})
+
+
+// Another Popular Slide
+let popSlider1 = document.getElementsByClassName('popular-slider')[1];
+let popItems1 = document.querySelectorAll('.pop-item');
+
+let leftPop1 = document.getElementsByClassName('pop-left')[1];
+let rightPop1 = document.getElementsByClassName('pop-right')[1];
+
+let popIndex1 = 0;
+popItems1[popIndex1].classList.add('active');
+
+leftPop1.addEventListener('click', () => {
+    popItems1[popIndex1].classList.remove('active');
+
+    popIndex1 = (popIndex1 == 0) ? popItems1.length - 1 : popIndex1 - 1;
+    popItems1[popIndex1].classList.add('active');
+
+    popSlider1.style.transform = `translateX(-${popIndex1 * 16}%)`; 
+})
+
+rightPop1.addEventListener('click', () => {
+    popItems1[popIndex1].classList.remove('active');
+
+    popIndex1 = (popIndex1 == popItems1.length - 1) ? 0 : popIndex1 + 1;
+    popItems1[popIndex1].classList.add('active');
+
+    popSlider1.style.transform = `translateX(-${popIndex1 * 16}%)`; 
 })
