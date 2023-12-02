@@ -629,17 +629,25 @@ header{
 footer{
     width: 100%;
 }
+.foo-container{
+    max-width: 1160px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .footer-top{
     background: #232f3e;
 }
 .foo-top-inner{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 50px 0;
 }
 .ftop-item{
-    flex: 0 0 24%;
+    flex: 0 0 18%;
+    margin: 0 10px;
+    /* border: 1px solid #fff; */
 }
 .ftop-item h2{
     font-size: 1.6rem;
@@ -707,8 +715,9 @@ footer{
     padding-top: 40px;
 }
 .fbottom-item{
-    flex: 0 0 12%;
-    margin: 10px;
+    flex: 0 0 13%;
+    margin: 10px 0;
+    /* border: 1px solid #fff; */
 }
 .fbottom-item a{
     font-size: 1.3rem;
