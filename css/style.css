@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-size: 62%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -587,7 +588,109 @@ header{
 .footer-up-inner p{
     font-size: 1.4rem;
 }
-.footer-up-inner a{
+.sign-in{
     font-size: 1.4rem;
+    display: inline-block;
+    padding: 10px 100px;
+    margin: 5px 0;
+    background-image: linear-gradient(orangered,yellow 10%, orangered 80%);
+    border-radius: 5px;
+    text-decoration: none;
 }
-.footer-up-inner p a{}
+.footer-up-inner p a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.footer-up-inner p a:hover{
+    color: #000;
+}
+
+
+.top-btn{
+    background: #37475a;
+    max-width: 100%;
+    padding: 15px;
+    text-align: center;
+    transition: 0.4s;
+}
+.top-btn:hover{
+    background: #485769;
+}
+.top-btn a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+/* Footer Section */
+footer{
+    width: 100%;
+}
+.footer-top{
+    background: #232f3e;
+    border-bottom: 1px solid #dddddd50;
+}
+.foo-top-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.ftop-item{
+    flex: 0 0 24%;
+}
+.ftop-item h2{
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.ftop-item ul{}
+.ftop-item ul li{
+    list-style: none;
+}
+.ftop-item ul li a{
+    display: inline-block;
+    color: #ffffff99;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.ftop-item ul li a:hover{
+    text-decoration: none;
+}
+
+.foo-top-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    flex: 0 0 25%;
+    height: 30px;
+}
+.footer-logo img{
+    max-width: 50%;
+}
+.footer-lang,
+.footer-doller,
+.footer-country{
+    flex: 0 0 10%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    margin: 5px;
+}
+.footer-lang span,
+.footer-doller span,
+.footer-country span{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-bottom{}
